@@ -1,7 +1,6 @@
 .site-header{
 	position: absolute;
 	width: 100%;
-	height: 4rem;
 	z-index: 3;
 	padding: 10px 0;
 	transition: background-color .3s ease-out;
@@ -9,6 +8,7 @@
 	
 	@mixin atMedium{
 		position: fixed;
+		height: 4rem;
 		background-color: $mainBlue;
 		transform: scale(1);
 		top:0;

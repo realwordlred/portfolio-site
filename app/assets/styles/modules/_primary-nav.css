@@ -89,10 +89,8 @@
 	&__dropdown{
 		opacity: 1;
 		display: inline;
-		overflow: hidden;
 		position: relative;
 		top: 0;
-		z-index: -10;
 		transition: all .5s ease-out;
 		max-width: 10rem;
 		
