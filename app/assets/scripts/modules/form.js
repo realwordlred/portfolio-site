@@ -74,7 +74,7 @@ compileForm(){
 
 sendrequest(){
 	
-	Axios.post('/.netlify/functions/send-email', postJson ).then(() => {
+	Axios.post('/functions/send-email', postJson ).then(() => {
       this.run.remove()
       this.success()
     }).catch(() => {
