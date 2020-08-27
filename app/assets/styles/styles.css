@@ -15,6 +15,7 @@
 /*index styles*/
 @import "modules/index/_bio";
 @import "modules/index/_projects";
+@import "modules/index/_cert";
 
 /*contact-us styles*/
 @import "modules/contact-us/_form";

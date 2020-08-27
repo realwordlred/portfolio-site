@@ -1,0 +1,92 @@
+.cert{
+ color: white;
+ 
+ 
+ 	&__header{
+	font-family: $titleFont;
+ text-align: center;
+	font-weight: 700;
+	font-size: 5rem;
+	line-height: 0;
+	}
+ 
+ &__gallery{
+  position: relative;
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 60vw;
+  min-height: 40vh;
+ }
+ 
+ #control-left, #control-right{
+  position: absolute;
+  font-size: 8rem;
+  top: 20%;
+  color: $mainBlue;
+  
+ }
+ 
+ #control-left{
+  
+  transform: rotate(90deg);
+  left: 10%;
+  
+ }
+ 
+ #control-right{
+  
+  transform: rotate(-90deg);
+  right: 10%;
+  
+ }
+ 
+  #control-left:hover, #control-right:hover{
+ 
+  color: $mainGold;
+  
+ }
+ 
+
+	
+ &__gallery-main-pic{
+  
+  position: absolute;
+  left: 26%;
+  width: 50%;
+  border: $mainBlue 2px solid;
+  box-shadow: 3px 5px rgba($shadowBlack,.3);
+  
+  
+ }
+ 
+ &__thumbs-container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  margin-bottom: 4rem;
+  }
+  
+  
+  &__thumb{
+   
+   flex: 0 1 auto;
+   width: 20%;
+   margin: 0 1rem 0 1rem;
+   border: $mainBlue 2px solid;
+   box-shadow: 3px 5px rgba($shadowBlack,.3);
+  }
+  
+  &__thumb--active{
+   
+   transform: scale(1.2); 
+   margin: 0 2rem 0 2rem;
+   border: $mainGold 2px solid;
+ 
+  }
+ 
+ 
+}

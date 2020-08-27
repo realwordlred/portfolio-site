@@ -61,7 +61,7 @@
 		 font-weight: 300;
 		  padding: 5px 8px;
 		  font-size: .8rem;
-		  background-color: rgba($mainBlue, .5);
+		  background-color: rgba($mainBlue, .7);
 		 
 		   
 
@@ -73,6 +73,16 @@
 	   }
 	   
 	}
+ 
+ 	li a[class='active']{
+   
+   background-color: rgba(#dcd3b4, .5);
+   border-radius: 25px;
+   border: #fff 2px solid;
+   color: #fff;
+   padding: 8px 15px;
+   
+  }
 	
 	.display-none-till-md{
 		
@@ -152,11 +162,12 @@
 		
 	}
 	
-	& li:hover{ 
+	& li:hover, & li:hover a[class='active']{ 
 	@mixin atMedium{
 			
 	background-color: $mainGold;
 	border-radius: 10px;
+ border: none;
 			
 		}
     

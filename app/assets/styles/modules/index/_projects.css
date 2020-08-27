@@ -1,12 +1,17 @@
 .projects{
+ position: relative;
 	text-align: center;
-	color: $mainBlue;
+	color: #fff;
+ background-color: $mainBlue;
+ z-index: -5;
+ margin: -5vh 0 5vh 0;
 	
 	&__header{
 	font-family: $titleFont;
 	font-weight: 700;
 	font-size: 5rem;
 	line-height: 0;
+ padding-top: 5vh;
 	}
 	
 	

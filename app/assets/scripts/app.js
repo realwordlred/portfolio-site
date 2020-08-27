@@ -1,6 +1,7 @@
 import '../styles/styles.css'
 import "lazysizes"
 import MobileMenu from "./modules/mobilemenu"
+import Gallery from "./modules/gallery"
 
 
 let currentPage = document.title
