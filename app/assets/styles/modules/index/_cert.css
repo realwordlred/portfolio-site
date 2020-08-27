@@ -16,6 +16,7 @@
   margin: 0 auto 0 auto;
   width: 100vw;
   min-height: 100vmin;
+  max-height: 100vmax;
   
   @mixin atSmall{
   min-height: 40vh;
@@ -23,6 +24,7 @@
   }
   @mixin atMedium{
     width: 60vw;
+    max-width: 1000px;
     min-height: 50vh;
    
   }
