@@ -14,32 +14,61 @@
   position: relative;
   display: block;
   margin: 0 auto 0 auto;
-  width: 60vw;
+  width: 100vw;
+  min-height: 100vmin;
+  
+  @mixin atSmall{
   min-height: 40vh;
+  width: 90vw;
+  }
+  @mixin atMedium{
+    width: 60vw;
+    min-height: 50vh;
+   
+  }
  }
  
 
  
  #control-left, #control-right{
+  
+  display: none;
+  
+  @mixin atSmall{
   position: absolute;
+  display: inline-block;
+  top: 20%;
+  font-size: 6rem;
+  color: $mainBlue;
+  }
+  
+  @mixin atMedium{
   top: 28%;
   font-size: 8rem;
-  color: $mainBlue;
   
+  }
  }
  
  #control-left{
   
   transform: rotate(90deg);
-  left: 5%;
+  left: 2%;
   
+  @mixin atMedium{
+   left: 3%;
+
+  }   
  }
  
  #control-right{
   
   transform: rotate(-90deg);
-  right: 5%;
+  right: 2%;
   
+  @mixin atMedium{
+   right: 3%;
+
+  }   
  }
  
   #control-left:hover, #control-right:hover{
@@ -53,42 +82,72 @@
  &__gallery-main-pic{
   
   position: absolute;
-  left: 15%;
-  width: 70%;
+  left: 2.5%;
+  width: 95%;
   border: $mainBlue 2px solid;
   box-shadow: 3px 5px rgba($shadowBlack,.3);
   
+  @mixin atSmall{
+   width: 70%;
+   left: 15%;
+  }
   
- }
+  }
+ 
+ 
  
  &__thumbs-container{
   position: relative;
   display: flex;
   flex-direction: row;
-  flex-wrap: none;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   width: 100vw;
   margin-bottom: 4rem;
+  
+  @mixin atMedium{
+    flex-wrap: no-wrap;
+   
+  }
   }
   
   
   &__thumb{
-   
+ 
    flex: 0 1 auto;
-   width: 20%;
-   margin: 0 1rem 0 1rem;
+   width: 80%;
+   margin: 1rem 1rem 2rem 1rem;
    border: $mainBlue 2px solid;
    box-shadow: 3px 5px rgba($shadowBlack,.3);
-   transition: all .3s ease-in;
+   
+   @mixin atSmall{
+    width: 30%;
+    margin: 0 1rem 0rem 1rem;
+   }
+   
+   @mixin atMedium{
+    width: 20%;
+    
+   }
   }
   
   &__thumb--active{
    
    transform: scale(1.2); 
-   margin: 0 2rem 0 2rem;
+   margin: 2rem 2rem 4rem 2rem;
    border: $mainGold 2px solid;
    transition: all .3s ease-in;
+   
+   @mixin atSmall{
+    margin: 0 2rem 4rem 2rem;
+    
+   }
+   
+   @mixin atMedium{
+    
+    margin: 0 2rem 0rem 2rem;
+   }
  
   }
  

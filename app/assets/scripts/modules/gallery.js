@@ -63,6 +63,7 @@ class Gallery{
 	}
 	}
  thumbChange(e){
+  this.activeThumb = document.querySelector('.cert__thumb--active')//call fresh active thumb
   this.mainImg.src = e.target.src
   this.mainImg.alt = e.target.alt
   this.currentImage = parseInt(e.target.id)
