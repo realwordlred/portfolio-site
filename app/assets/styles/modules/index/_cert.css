@@ -18,10 +18,12 @@
   min-height: 40vh;
  }
  
+
+ 
  #control-left, #control-right{
   position: absolute;
+  top: 28%;
   font-size: 8rem;
-  top: 20%;
   color: $mainBlue;
   
  }
@@ -29,14 +31,14 @@
  #control-left{
   
   transform: rotate(90deg);
-  left: 10%;
+  left: 5%;
   
  }
  
  #control-right{
   
   transform: rotate(-90deg);
-  right: 10%;
+  right: 5%;
   
  }
  
@@ -51,8 +53,8 @@
  &__gallery-main-pic{
   
   position: absolute;
-  left: 26%;
-  width: 50%;
+  left: 15%;
+  width: 70%;
   border: $mainBlue 2px solid;
   box-shadow: 3px 5px rgba($shadowBlack,.3);
   
@@ -78,6 +80,7 @@
    margin: 0 1rem 0 1rem;
    border: $mainBlue 2px solid;
    box-shadow: 3px 5px rgba($shadowBlack,.3);
+   transition: all .3s ease-in;
   }
   
   &__thumb--active{
@@ -85,6 +88,7 @@
    transform: scale(1.2); 
    margin: 0 2rem 0 2rem;
    border: $mainGold 2px solid;
+   transition: all .3s ease-in;
  
   }
  
