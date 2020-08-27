@@ -16,6 +16,8 @@ if(currentPage === 'PR\'s portfolio contact-us'){
 
 let mobileMenu= new MobileMenu()
 
+let gallery = new Gallery()
+
 let modal
 
 
