@@ -6,7 +6,10 @@ class Gallery{
        this.imgArray = [['assets/images/certs/intro-to-html5.jpg','passed intro to html5'],
                         ['assets/images/certs/intro-to-css3.jpg','passed intro to css3'],
                         [ 'assets/images/certs/Interactivity-with-JavaScript.jpg','passed interactivity with javaScript'],
-                        ['assets/images/certs/Advanced-Styling-with-Responsive-Design.jpg','advanced styling with responsive design']]
+                        ['assets/images/certs/Advanced-Styling-with-Responsive-Design.jpg','advanced styling with responsive design'],
+                        ['assets/images/certs/web-design-for-everybody.jpg','webdesign for everybody'],
+                        ['assets/images/certs/programming-for-everybody-python.jpg','python for everyone intro'],
+                        ['assets/images/certs/programming-for-everybody-python-data-structures.jpg','python for everyone data-structures']]
        this.currentImage = 3
        this.activeThumb
        this.events()
@@ -26,9 +29,9 @@ class Gallery{
  loadImgs(){
   let count = 0
   for(const img of this.imgArray){
-  let thumb = `<img src="${img[0]}" alt="${img[1]}" id="${count}" class="cert__thumb">`
+  let thumb = `<img src="${img[0]}" alt="${img[1]}" id="${count}" name="cert ${count}" class="cert__thumb">`
   if(count === this.currentImage){
-   thumb = `<img src="${img[0]}" alt="${img[1]}" id="${count}" class="cert__thumb cert__thumb--active">`
+   thumb = `<img src="${img[0]}" alt="${img[1]}" id="${count}" name="cert ${count}" class="cert__thumb cert__thumb--active">`
    
    
   }
@@ -64,11 +67,13 @@ class Gallery{
 	}
  thumbChange(e){
   this.activeThumb = document.querySelector('.cert__thumb--active')//call fresh active thumb
+  if(e.target.name.includes('cert')){
   this.mainImg.src = e.target.src
   this.mainImg.alt = e.target.alt
   this.currentImage = parseInt(e.target.id)
   this.activeThumb.classList.remove('cert__thumb--active')//remove current active thumb
   e.target.classList.add('cert__thumb--active')//add active class to new active tab
+  }
  }
 	
 	

@@ -23,9 +23,14 @@
   width: 90vw;
   }
   @mixin atMedium{
-    width: 60vw;
-    max-width: 1000px;
-     
+    width: 70vw;
+    max-width: 900px;
+   
+  }
+  
+  @mixin atLarge{
+   
+   min-height: 600px;
    
   }
  }
@@ -108,10 +113,6 @@
   width: 100vw;
   margin-bottom: 4rem;
   
-  @mixin atMedium{
-    flex-wrap: no-wrap;
-   
-  }
   }
   
   
@@ -130,7 +131,7 @@
    
    @mixin atMedium{
     width: 20%;
-    margin: 0 1rem 0rem 1rem;
+    margin: 6rem 2rem 6rem 1rem;
    }
   }
   
