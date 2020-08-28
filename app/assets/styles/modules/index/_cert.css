@@ -92,6 +92,7 @@
   
   @mixin atSmall{
    position: absolute;
+   display: block;
   left: 2.5%;
   width: 95%;
   border: $mainBlue 2px solid;
