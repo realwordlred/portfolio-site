@@ -88,15 +88,16 @@
 	
  &__gallery-main-pic{
   
-  position: absolute;
+  display: none;
+  
+  @mixin atSmall{
+   position: absolute;
   left: 2.5%;
   width: 95%;
   border: $mainBlue 2px solid;
   box-shadow: 3px 5px rgba($shadowBlack,.3);
-  
-  @mixin atSmall{
-   width: 70%;
-   left: 15%;
+  width: 70%;
+  left: 15%;
   }
   
   }
