@@ -15,17 +15,17 @@
   display: block;
   margin: 0 auto 0 auto;
   width: 100vw;
-  min-height: 100vmin;
-  max-height: 100vmax;
+  min-height: 370px;
+ 
   
   @mixin atSmall{
-  min-height: 40vh;
+  min-height: 400px;
   width: 90vw;
   }
   @mixin atMedium{
     width: 60vw;
     max-width: 1000px;
-    min-height: 50vh;
+     
    
   }
  }
@@ -125,12 +125,12 @@
    
    @mixin atSmall{
     width: 30%;
-    margin: 0 1rem 0rem 1rem;
+    
    }
    
    @mixin atMedium{
     width: 20%;
-    
+    margin: 0 1rem 0rem 1rem;
    }
   }
   
