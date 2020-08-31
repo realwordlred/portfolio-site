@@ -3,7 +3,6 @@
 	text-align: center;
 	color: #fff;
  background-color: $mainBlue;
- z-index: -5;
  margin: -5vh 0 5vh 0;
 	
 	&__header{
@@ -17,12 +16,9 @@
 	
 	&__content{
 		display: block;
-		
-		
-		
-		
-		
-		@mixin atMedium{
+  position: relative;
+
+	@mixin atMedium{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
@@ -47,6 +43,7 @@
 			text-align: center;
 			margin-right: 2rem;
 			max-width: 40vw;
+   
 		}
 		
 		
@@ -71,7 +68,7 @@
 	div{
 	      
 			max-width: 28vw;
-		
+		 
 		
 	}
 	
