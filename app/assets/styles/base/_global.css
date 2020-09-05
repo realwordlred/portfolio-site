@@ -11,7 +11,7 @@ body {
   background-color: rgba($mainGold, .4);
   font-family: $mainFont;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-items: space-around;
 }
 
