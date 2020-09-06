@@ -10,11 +10,7 @@ body {
   color: #333;
   background-color: rgba($mainGold, .4);
   font-family: $mainFont;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  min-width:100%;
-  min-height: 100%;
+
 }
 
 img {
